@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: "cyntho-next-regular";
+	src: url(./assets/fonts/CynthoNextRegular.otf);
+}
+@font-face {
+	font-family: "cyntho-next-bold";
+	src: url(./assets/fonts/CynthoNextBold.otf);
+}
+@font-face {
+	font-family: "cyntho-next-extra-bold";
+	src: url(./assets/fonts/CynthoNextExtraBold.otf);
+}
+@font-face {
+	font-family: "cyntho-next-thin";
+	src: url(./assets/fonts/CynthoNextThin.otf);
+}
