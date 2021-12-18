@@ -9,9 +9,9 @@ import styles from "./Header.module.css";
 
 const Header = () => {
 	return (
-		<div className={`pt-[3rem] h-screen flex flex-row justify-between p-8 ${styles.header}`}>
-			<div className="flex-[4_4_0%]">
-				<p className="text-sm pt-24 pb-4 text-purple-pastel">
+		<section className={`pt-[3rem] h-screen flex flex-row justify-between p-8 ${styles.header}`}>
+			<div className="flex-[4_4_0%] self-center">
+				<p className="text-sm pb-4 text-purple-pastel drop-shadow-md">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						className="h-5 w-5 inline mr-2 text-purple-pastel"
@@ -36,7 +36,7 @@ const Header = () => {
 						name="search"
 						id="search"
 						placeholder="Subject you want to learn?"
-						className="border-[1px] border-gray-500 px-4 py-2 text-sm rounded-lg w-[100%]"
+						className="border-[2px] border-gray-300 px-4 py-2 text-sm rounded-lg w-[100%] drop-shadow-md"
 					/>
 					<button className="absolute top-[50%] translate-y-[-50%] right-0 flex items-center py-[0.7rem] px-3 bg-ocean-pastel rounded-lg text-sm text-white">
 						<svg
@@ -58,9 +58,9 @@ const Header = () => {
 			<div className="flex-[5_5_0%] self-center">
 				<img src={headerImage} alt="hero" className="m-auto w-[100%] mt-2" />
 			</div>
-			<div className="flex-[2_2_0%] mt-28">
-				<div className="flex flex-col justify-center ml-5 w-[80%] ml-12">
-					<div className="flex flex-row mt-8">
+			<div className="flex-[2_2_0%] self-center">
+				<div className="flex flex-col justify-center ml-5 w-[80%] ml-8 ">
+					<div className="flex flex-row mt-6 border-[2px] rounded-lg p-2 border-purple-pastel drop-shadow-md">
 						<div className="flex flex-col justify-between font-bold text-lg">
 							01<div className="h-[5px] bg-purple-pastel w-[100%] rounded-lg mb-1"></div>
 						</div>
@@ -69,18 +69,18 @@ const Header = () => {
 							configuration
 						</p>
 					</div>
-					<div className="flex flex-row mt-8">
+					<div className="flex flex-row mt-6 border-[2px] rounded-lg p-2 border-ocean-pastel drop-shadow-md">
 						<div className="flex flex-col justify-between font-bold text-lg">
-							02<div className="h-[5px] bg-purple-pastel w-[100%] rounded-lg mb-1"></div>
+							02<div className="h-[5px] bg-ocean-pastel w-[100%] rounded-lg mb-1"></div>
 						</div>
 						<p className="ml-4 text-sm">
 							Super <br />
 							interactive
 						</p>
 					</div>
-					<div className="flex flex-row mt-8">
+					<div className="flex flex-row mt-6 border-[2px] rounded-lg p-2 border-red-pastel drop-shadow-md">
 						<div className="flex flex-col justify-between font-bold text-lg">
-							03<div className="h-[5px] bg-purple-pastel w-[100%] rounded-lg mb-1"></div>
+							03<div className="h-[5px] bg-red-pastel w-[100%] rounded-lg mb-1"></div>
 						</div>
 						<p className="ml-4 text-sm">
 							Affordable <br />
@@ -89,7 +89,7 @@ const Header = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

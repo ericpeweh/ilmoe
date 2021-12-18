@@ -1,0 +1,6 @@
+.trending {
+	background-image: url("../../../assets/img/trending.svg");
+	background-size: cover;
+	background-position: center;
+	height: 95vh;
+}
