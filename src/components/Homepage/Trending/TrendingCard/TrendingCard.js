@@ -13,7 +13,10 @@ const TrendingCard = ({ title, img, topics, data }) => {
 			<img src={img} alt={title} className="h-[9rem] block m-auto my-8" />
 			<ul>
 				{topics.map(topic => (
-					<li className="text-center py-1 w-100 bg-slate-200 drop-shadow rounded-lg my-2 text-gray-700">
+					<li
+						className="text-center py-1 w-100 bg-slate-200 drop-shadow rounded-lg my-2 text-gray-700"
+						key={topic}
+					>
 						{topic}
 					</li>
 				))}

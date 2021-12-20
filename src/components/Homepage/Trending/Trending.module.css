@@ -2,5 +2,38 @@
 	background-image: url("../../../assets/img/trending.svg");
 	background-size: cover;
 	background-position: center;
-	height: 95vh;
+}
+
+@media screen and (max-width: 1120px) {
+	.cardsContainer > div {
+		margin: 0.5rem;
+		min-width: 12rem;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.cardsContainer > div > img {
+		height: 6rem;
+	}
+
+	.cardsContainer {
+		padding: 0.5rem !important;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.cardsContainer {
+		flex-direction: column !important;
+	}
+
+	.cardsContainer > div {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.cardsContainer > div {
+		width: 95%;
+		margin-bottom: 1.5rem;
+	}
 }
