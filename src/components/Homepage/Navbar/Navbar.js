@@ -26,36 +26,40 @@ const Navbar = ({ currentNav, onPressMenu, isMenuOpen }) => {
 			<a href="#header">
 				<img src={logo} alt="logo" className="w-28" />
 			</a>
-			<ul className={`flex flex-row justify-around items-center ${styles.navLinks}`}>
-				<li
+			<div className={`flex flex-row justify-around items-center ${styles.navLinks}`}>
+				<a
 					className={`px-5 cursor-pointer hover:text-purple-pastel text-lg transition-all ${
 						currentNav === "header" ? "font-bold text-purple-pastel" : ""
 					}`}
+					href="#header"
 				>
-					<a href="#header">Home</a>
-				</li>
-				<li
+					Home
+				</a>
+				<a
 					className={`px-5 cursor-pointer hover:text-purple-pastel text-lg transition-all ${
 						currentNav === "trending" ? "font-bold text-purple-pastel" : ""
 					}`}
+					href="#trending"
 				>
-					<a href="#trending">Subjects</a>
-				</li>
-				<li
+					Subjects
+				</a>
+				<a
 					className={`px-5 cursor-pointer hover:text-purple-pastel text-lg transition-all ${
 						currentNav === "pricing" ? "font-bold text-purple-pastel" : ""
 					}`}
+					href="#pricing"
 				>
-					<a href="#pricing">Pricing</a>
-				</li>
-				<li
+					Pricing
+				</a>
+				<a
 					className={`px-5 cursor-pointer hover:text-purple-pastel text-lg transition-all ${
 						currentNav === "contacts" ? "font-bold text-purple-pastel" : ""
 					}`}
+					href="#contacts"
 				>
-					<a href="#contacts">Contacts</a>
-				</li>
-			</ul>
+					Contacts
+				</a>
+			</div>
 			<button
 				className={`px-6 py-3 bg-ocean-pastel rounded-lg text-white text-md hover:bg-purple-pastel transition-all hover:scale-105 ${styles.signInButton}`}
 				onClick={() => navigate("/dashboard")}
