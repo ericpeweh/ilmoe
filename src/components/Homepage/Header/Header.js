@@ -30,7 +30,7 @@ const Header = React.forwardRef((props, ref) => (
 				<span className="text-red-pastel">anywhere</span>
 			</h1>
 			<p className="text-sm w-[70%] text-gray-500 mt-5">
-				Interactive learning platform that provides various features to provide a better learning
+				Interactive learning platform that provides various features to achieve a better learning
 				experience.
 			</p>
 			<div className={`relative mt-5 w-[80%] ${styles.inputContainer}`}>
