@@ -82,6 +82,9 @@ const Footer = React.forwardRef((props, ref) => {
 					</div>
 				</div>
 			</div>
+			<p className="text-center pt-12 pb-8 w-full font-bold text-lg">
+				&copy; 2021 Ilmoe. All Rights Reserved
+			</p>
 		</footer>
 	);
 });

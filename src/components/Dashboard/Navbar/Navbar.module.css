@@ -1,0 +1,26 @@
+@media screen and (max-width: 1025px) {
+	.logo {
+		margin-top: 0 !important;
+	}
+
+	.navbar {
+		flex-direction: row !important;
+		justify-content: space-between !important;
+		align-items: center;
+	}
+
+	.menuItemContainer {
+		flex-direction: row !important;
+		flex: 1 !important;
+		justify-content: center !important;
+	}
+
+	.menuItemContainer > a {
+		margin: 0 1rem !important;
+	}
+
+	.arrowIcon {
+		margin-bottom: 0 !important;
+		color: white !important;
+	}
+}

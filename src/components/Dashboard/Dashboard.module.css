@@ -1,19 +1,49 @@
 /* Firefox */
 * {
-  scrollbar-width: none;
+	scrollbar-width: none;
 }
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
 *::-webkit-scrollbar-track {
-  background: #ffffff;
+	background: #ffffff;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #c0c0c0;
-  border-radius: 10px;
-  border: 3px solid #ffffff;
+	background-color: #c0c0c0;
+	border-radius: 10px;
+	border: 3px solid #ffffff;
+}
+
+@media screen and (max-width: 1025px) {
+	.dashboard {
+		flex-direction: column !important;
+	}
+}
+
+.videoPlayer {
+	background-image: linear-gradient(
+			51deg,
+			rgba(116, 116, 116, 0.2726132689403886) 0%,
+			rgba(94, 94, 94, 0.348243521041229) 100%
+		),
+		url("../../assets//img//videobg.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+@media screen and (max-width: 1130px) {
+	.videoPlayer {
+		height: 18rem !important;
+	}
+}
+
+@media screen and (max-width: 1040px) {
+	.videoPlayer {
+		height: 15rem !important;
+		display: none !important;
+	}
 }

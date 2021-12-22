@@ -1,0 +1,20 @@
+.videoCard {
+	transition: all 0.3s ease;
+}
+
+.videoCard:hover {
+	background-color: #5784bb;
+	color: white;
+	transform: scale(1.02);
+}
+
+.videoCard:active {
+	transform: scale(1.01);
+}
+
+@media screen and (max-width: 1124px) {
+	.title {
+		font-size: 1rem !important;
+		letter-spacing: 0px !important;
+	}
+}
