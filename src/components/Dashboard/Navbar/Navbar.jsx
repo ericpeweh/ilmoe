@@ -5,12 +5,14 @@ import logoImage from "../../../assets/img/logo.png";
 
 const Navbar = () => {
   return (
-    <div className="bg-black text-white pl-4 pr-6 flex flex-col justify-between items-center">
+    <div className="bg-sky-pastel pl-4 pr-6 flex flex-col justify-between items-center">
       <div className="mt-12">
-        <img src={logoImage} className="w-12" alt="logo" />
+        <a href="/">
+          <img src={logoImage} className="w-12" alt="logo" />
+        </a>
       </div>
       <div className="w-12 flex flex-col items-center">
-        <a href="#" className="text-orange-500 py-4">
+        <a href="#" className="text-purple-pastel py-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-7 w-7"
@@ -20,7 +22,7 @@ const Navbar = () => {
             <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
           </svg>
         </a>
-        <a href="#" className="text-white py-4">
+        <a href="#" className="py-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-7 w-7"
@@ -30,7 +32,7 @@ const Navbar = () => {
             <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
           </svg>
         </a>
-        <a href="#" className="text-white py-4">
+        <a href="#" className="py-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-7 w-7"
@@ -41,7 +43,7 @@ const Navbar = () => {
             <path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z" />
           </svg>
         </a>
-        <a href="#" className="text-white py-4">
+        <a href="#" className="py-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-7 w-7"
@@ -57,7 +59,7 @@ const Navbar = () => {
         </a>
       </div>
       <div className="mb-12">
-        <a href="#" className="text-white py-4">
+        <a href="#" className="py-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"

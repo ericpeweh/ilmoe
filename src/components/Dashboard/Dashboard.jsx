@@ -3,25 +3,28 @@ import React from "react";
 import Courses from "./Courses/Courses";
 import Folder from "./Folder/Folder";
 import Navbar from "./Navbar/Navbar";
+import VideoCard from "./VideoCard/VideoCard";
 
 import styles from "./Dashboard.module.css";
 
 const Dashboard = () => {
   return (
-    <div className={`w-full bg-gray-200 ${styles}`}>
+    <div className={`w-full bg-yellow-pastel ${styles}`}>
       <div className="flex h-screen">
         <Navbar />
         <div className="flex flex-row">
           <Courses />
           <Folder />
         </div>
-        <div className="bg-gray-200">
+        <div className="bg-yellow-pastel  overflow-y-auto">
           <div className="p-8">
             <div className="flex flex-row justify-end items-center">
-              <span className="text-gray-500">25 December 2021, Saturday</span>
+              <span className="text-ocean-pastel">
+                25 December 2021, Saturday
+              </span>
               <a
                 href="#"
-                className="p-2 rounded-lg bg-gray-500 ml-6 text-white"
+                className="p-2 rounded-lg bg-purple-pastel ml-6 text-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +43,7 @@ const Dashboard = () => {
               </a>
               <a
                 href="#"
-                className="p-2 rounded-lg bg-gray-500 ml-2 text-white"
+                className="p-2 rounded-lg bg-purple-pastel ml-2 text-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +61,7 @@ const Dashboard = () => {
                 </svg>
               </a>
             </div>
-            <div className="bg-green-900 w-96 h-48 mt-12 flex items-center justify-center text-white rounded-xl">
+            <div className="bg-red-pastel w-96 h-48 mt-12 flex items-center justify-center text-white rounded-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-16 w-16"
@@ -79,6 +82,57 @@ const Dashboard = () => {
                   d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
+            </div>
+            <div className="flex flex-row justify-between items-center mt-4">
+              <div className="inline-flex">
+                <h1 className="font-semibold text-2xl">My Videos</h1>
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 ml-1 mt-3"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <a href="#" className="text-ocean-pastel text-md">
+                view all videos
+              </a>
+            </div>
+            <div>
+              <VideoCard
+                title="Human-Centered Design"
+                ratings="663"
+                reviews="72"
+              />
+              <VideoCard
+                title="Input and Interaction"
+                ratings="526"
+                reviews="92"
+              />
+              <VideoCard
+                title="E-Learning and Digital Cultures"
+                ratings="1,167"
+                reviews="156"
+              />
+              <VideoCard
+                title="Eng - Vocabulary Test"
+                ratings="758"
+                reviews="103"
+              />
+              <VideoCard
+                title="Social Communication"
+                ratings="687"
+                reviews="123"
+              />
             </div>
           </div>
         </div>

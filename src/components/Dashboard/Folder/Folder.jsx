@@ -40,7 +40,7 @@ const Folder = () => {
               />
             </svg>
           </button>
-          <button className="rounded-lg bg-blue-600 p-2 text-white">
+          <button className="rounded-lg bg-purple-pastel p-2 text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-4 w-4"
