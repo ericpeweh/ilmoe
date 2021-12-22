@@ -24,7 +24,7 @@ const CoursesCard = ({ title, date, rating, bg_color, font_color, img_color, log
 					<span className={`${font_color} font-semibold ml-1`}>{rating}</span>
 				</div>
 			</div>
-			<div className={`ml-10 ${font_color}`}>
+			<div className={`ml-10 ${font_color} ${styles.moreIcon}`}>
 				<a href="#">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"

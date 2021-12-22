@@ -2,4 +2,8 @@
 	.rating {
 		display: none !important;
 	}
+
+	.moreIcon {
+		margin-left: 0 !important;
+	}
 }
